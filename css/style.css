@@ -33,7 +33,10 @@ header{
 
 .central-container{
     width: calc(100vw - 100px);
-    background-color: red;
+}
+
+.top-central{
+    background-color: rgb(0, 145, 223);
 }
 
 /***** UTILITY *****/
