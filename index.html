@@ -23,11 +23,17 @@
     
     <!-- Header -->
     <header>
-        <img src="./img /mobile-logo.png" alt="mobile-logo" class="ms-3">
+        <img src="./img /mobile-logo.png" alt="mobile-logo" class="ms-3 d-lg-none">
+        <img src="./img /logo.svg" alt="logo" class="d-none d-lg-block ms-3">
         <div class="input-group my-3 mx-3 ">
             <span class="input-group-text border-none" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
             <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
         </div> 
+        <ul class="d-flex list-unstyled my-4 d-none d-lg-flex">
+          <li><i class="fa-solid fa-list-ul"></i></li> 
+          <li><i class="fa-solid fa-circle-question ms-3"></i></li> 
+          <li><i class="fa-solid fa-ellipsis-vertical ms-3"></i></li>  
+        </ul>
         <div class="dropdown my-3 mx-2">
             <button class="btn btn-wight" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell color-orange"></i>

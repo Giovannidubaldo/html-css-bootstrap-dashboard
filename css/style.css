@@ -9,16 +9,15 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/***** LAYOUT *****/
+
 header{
     height: 75px;
     display: flex;
-    /* position: fixed;
+    position: fixed;
     width: 100%;
-    z-index: 1; */
-}
-
-.color-orange{
-    color: orange;
+    z-index: 1;
+    background-color: white;
 }
 
 .main-container{
@@ -28,7 +27,8 @@ header{
 
 .sidebar{
     width: 100px;
-    background-color: blue;
+    background-image: url(../img\ /sidebar-bg.png);
+    background-color: rgb(18, 18, 30);
 }
 
 .central-container{
@@ -36,3 +36,16 @@ header{
     background-color: red;
 }
 
+/***** UTILITY *****/
+
+.color-orange{
+    color: orange;
+}
+
+/***** RESPONSIVE *****/
+
+@media screen and (min-width: 991px) {
+    .sidebar{
+        width: 200px;
+    }
+}
