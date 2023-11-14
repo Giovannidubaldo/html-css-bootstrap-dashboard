@@ -8,3 +8,31 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
+header{
+    height: 75px;
+    display: flex;
+    /* position: fixed;
+    width: 100%;
+    z-index: 1; */
+}
+
+.color-orange{
+    color: orange;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar{
+    width: 100px;
+    background-color: blue;
+}
+
+.central-container{
+    width: calc(100vw - 100px);
+    background-color: red;
+}
+
