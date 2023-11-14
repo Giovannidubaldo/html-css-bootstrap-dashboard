@@ -45,6 +45,13 @@ header{
     color: orange;
 }
 
+/***** ANIMATION *****/
+
+.sidebar li:hover{
+    background-color: rgba(245, 245, 220, 0.176);
+    cursor: pointer;
+}
+
 /***** RESPONSIVE *****/
 
 @media screen and (min-width: 991px) {
