@@ -14,14 +14,14 @@ body{
 header{
     height: 75px;
     display: flex;
-    position: fixed;
+    /* position: fixed;
     width: 100%;
     z-index: 1;
-    background-color: white;
+    background-color: white; */
 }
 
 .main-container{
-    height: 100vh;
+    height: calc(100vh - 75px);
     display: flex;
 }
 
