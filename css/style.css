@@ -46,6 +46,10 @@ header{
     color: orange;
 }
 
+.bg-search{
+    background-color: #f8f9fa;
+}
+
 /***** ANIMATION *****/
 
 .sidebar li:hover{
