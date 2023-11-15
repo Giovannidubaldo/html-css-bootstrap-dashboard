@@ -50,6 +50,12 @@ header{
     background-color: #f8f9fa;
 }
 
+.bg-badge{
+    background-color: rgba(5, 5, 70, 0.433);
+    padding: 5px;
+    border-radius: 30px;
+}
+
 /***** ANIMATION *****/
 
 .sidebar li:hover{
