@@ -26,8 +26,8 @@
         <img src="./img /mobile-logo.png" alt="mobile-logo" class="ms-3 d-lg-none">
         <img src="./img /logo.svg" alt="logo" class="d-none d-lg-block ms-3">
         <div class="input-group my-3 mx-3 ">
-            <span class="input-group-text border-none" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-            <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
         </div> 
         <ul class="d-flex list-unstyled my-4 d-none d-lg-flex">
           <li><i class="fa-solid fa-list-ul"></i></li> 
@@ -76,27 +76,45 @@
                 <div class="top-central">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 col-md-4 order-md-1 mt-4">
+                            <div class="col-12 col-md-3 order-md-1 mt-4">
+
+                                <!-- Button offcanvas -->
                                 <div class="d-flex">
                                     <p class="text-white">Nuovo Studente</p>
                                     <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                                    <!-- Offcanvas -->
                                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                       <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                       </div>
                                       <div class="offcanvas-body">
-                                        ...
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="name">Nome</label>
+                                                    <input type="text" name="name" id="name">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="surname">Cognome</label>
+                                                    <input type="text" name="surname" id="surname">
+                                                </div>
+                                            </div>
+                                        </form>
                                       </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 mt-4">
+
+                            <div class="col-12 col-md-5 mt-4">
                                 <div class="text-white">
                                     <h2>Boolean<span class="badge bg-secondary ms-2 fs-6">Piano blaze</span></h2>
                                 </div>
                                 <div class="text-white mt-2">
-                                    <span class="badge bg-secondary ms-2 mb-4 fs-6">3 app</span><i class="fa-solid fa-angle-right ms-2"></i><i class="fa-solid fa-angle-right"></i><span class="badge bg-secondary ms-2 fs-6"><i class="fa-solid fa-plus"></i></span> 
+                                    <span class="badge bg-secondary ms-2 mb-4 fs-6">3 app</span><i class="fa-solid fa-angle-right ms-2"></i><i class="fa-solid fa-angle-right"></i>
+                                    <span class="badge bg-secondary ms-2 fs-6 d-lg-none"><i class="fa-solid fa-plus"></i></span> 
+                                    <span class="badge bg-secondary ms-2 mb-4 fs-6 d-none d-lg-inline-block">Boolean mobile app</span>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4 mt-4">
@@ -110,8 +128,147 @@
                 </div>
 
                 <!-- Bottom central -->
-                <div class="bottom-central"></div>
+                <div class="bottom-central">
+                    <div class="container-fluid">
+                        <div class="row mt-3">
 
+                            <!-- Table "prossime classi" -->
+                            <div class="col-12 col-lg-8">
+                                <div class="card">
+                                    <div class="card-header fs-3">
+                                      Prossime classi
+                                    </div>
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Nome</th>
+                                            <th class="d-none d-sm-table-cell">Data inizio</th>
+                                            <th class="d-none d-sm-table-cell">ROI</th>
+                                            <th>Stato</th>
+                                            <th>Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>Classe 75</td>
+                                            <td class="d-none d-sm-table-cell">15 Feb 2021</td>
+                                            <td class="d-none d-sm-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-outline-secondary" disabled><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary ms-2" disabled><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Classe 76</td>
+                                            <td class="d-none d-sm-table-cell">16 Feb 2021</td>
+                                            <td class="d-none d-sm-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-outline-secondary" disabled><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary ms-2" disabled><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Classe 77</td>
+                                            <td class="d-none d-sm-table-cell">17 Feb 2021</td>
+                                            <td class="d-none d-sm-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-warning">Process</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-outline-secondary" disabled><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary ms-2" disabled><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Classe 78</td>
+                                            <td class="d-none d-sm-table-cell">18 Feb 2021</td>
+                                            <td class="d-none d-sm-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-outline-secondary" disabled><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary ms-2" disabled><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td >Classe 79</td>
+                                            <td class="d-none d-sm-table-cell">19 Feb 2021</td>
+                                            <td class="d-none d-sm-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-danger">Failed</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-outline-secondary" disabled><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary ms-2" disabled><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Classe 80</td>
+                                            <td class="d-none d-sm-table-cell">20 Feb 2021</td>
+                                            <td class="d-none d-sm-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-outline-secondary" disabled><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary ms-2" disabled><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Classe 81</td>
+                                            <td class="d-none d-sm-table-cell">21 Feb 2021</td>
+                                            <td class="d-none d-sm-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-danger">Failed</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-outline-secondary" disabled><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary ms-2" disabled><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Classe 82</td>
+                                            <td class="d-none d-sm-table-cell">22 Feb 2021</td>
+                                            <td class="d-none d-sm-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn btn-outline-secondary" disabled><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary ms-2" disabled><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>    
+                </div>
             </div>
         </div>
     </main>

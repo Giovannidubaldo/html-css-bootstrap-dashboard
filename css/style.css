@@ -33,6 +33,7 @@ header{
 
 .central-container{
     width: calc(100vw - 100px);
+    overflow-y: auto;
 }
 
 .top-central{
@@ -45,6 +46,10 @@ header{
     color: orange;
 }
 
+.done-bg{
+    background-color: green;
+}
+
 /***** ANIMATION *****/
 
 .sidebar li:hover{
@@ -52,10 +57,20 @@ header{
     cursor: pointer;
 }
 
+.avatar{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
 /***** RESPONSIVE *****/
 
 @media screen and (min-width: 991px) {
     .sidebar{
         width: 200px;
+    }
+
+    .table th:nth-child(1){
+        width: 30%;
     }
 }
