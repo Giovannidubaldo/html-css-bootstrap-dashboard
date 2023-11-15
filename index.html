@@ -91,14 +91,16 @@
                                       </div>
                                       <div class="offcanvas-body">
                                         <form action="">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <label for="name">Nome</label>
-                                                    <input type="text" name="name" id="name">
-                                                </div>
-                                                <div class="col-6">
-                                                    <label for="surname">Cognome</label>
-                                                    <input type="text" name="surname" id="surname">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="name">Nome</label>
+                                                        <input type="text" name="name" id="name">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="surname">Cognome</label>
+                                                        <input type="text" name="surname" id="surname">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </form>
@@ -107,6 +109,7 @@
                                 </div>
                             </div>
 
+                            <!-- Boolean badges -->
                             <div class="col-12 col-md-5 mt-4">
                                 <div class="text-white">
                                     <h2>Boolean<span class="badge bg-secondary ms-2 fs-6">Piano blaze</span></h2>
@@ -117,6 +120,8 @@
                                     <span class="badge bg-secondary ms-2 mb-4 fs-6 d-none d-lg-inline-block">Boolean mobile app</span>
                                 </div>
                             </div>
+
+                            <!-- Studenti Online -->
                             <div class="col-12 col-md-4 mt-4">
                                 <div class="text-white">
                                     <p>Studenti online negli ultimi 30 minuti</p>
@@ -132,8 +137,10 @@
                     <div class="container-fluid">
                         <div class="row my-4">
 
-                            <!-- Section Table "prossime classi" -->
+                            <!-- COL TABLE AND F.A.Q -->
                             <div class="col-12 col-lg-8">
+                            
+                                <!-- Section Table "prossime classi" -->
                                 <div class="card">
                                     <div class="card-header fs-3">
                                       Prossime classi
@@ -264,57 +271,58 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
 
-                            <!-- Section F.A.Q -->
-                            <div class="col-12 col-lg-8 mt-3 order-lg-1">
-                                <div class="card">
+                                <!-- Section F.A.Q -->
+                                
+                                <div class="card mt-3">
                                     <div class="card-header text-uppercase fs-3">
-                                      f.a.q
+                                          f.a.q
                                     </div>
                                     <div class="accordion" id="accordionExample">
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              Come aggiungere un nuovo studente?
-                                            </button>
-                                          </h2>
-                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                               </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                              <em>Clicca sul + in alto nella sezione blu.</em>
+                                                <em>Clicca sul + in alto nella sezione blu.</em>
                                             </div>
-                                          </div>
                                         </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Come posso accedere alle informazioni del mio account?
+                                                  Come posso accedere alle informazioni del mio account?
                                             </button>
-                                          </h2>
-                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                              <em>Clicca sull'icone della campanella.</em>
+                                                <em>Clicca sull'icone della campanella.</em>
                                             </div>
-                                          </div>
+                                            </div>
                                         </div>
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                              Posso usare questa dashboard da mobile?
-                                            </button>
-                                          </h2>
-                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
                                             </div>
-                                          </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Section Todo -->
+                            <!-- COL TODO AND STATS -->
                             <div class="col-12 col-lg-4 mt-3 mt-lg-0">
+                            
+                            <!-- Section Todo -->
                                 <div class="card">
                                     <div class="card-header fs-3">
                                       Todo
@@ -325,9 +333,26 @@
                                       <li class="list-group-item"><input type="checkbox" name="github" id="github" class="me-2">Controllare username github studenti</li>
                                     </ul>
                                 </div>
-                            </div>
 
-                            <!-- Section Stats -->
+                                <!-- Section Stats -->
+                                <div class="card mt-3">
+                                    <img src="./img /stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">
+                                            Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Visualizza report approfondito</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>    
                 </div>
