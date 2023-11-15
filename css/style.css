@@ -46,21 +46,11 @@ header{
     color: orange;
 }
 
-.done-bg{
-    background-color: green;
-}
-
 /***** ANIMATION *****/
 
 .sidebar li:hover{
     background-color: rgba(245, 245, 220, 0.176);
     cursor: pointer;
-}
-
-.avatar{
-    height: 50px;
-    width: 50px;
-    background-color: white;
 }
 
 /***** RESPONSIVE *****/

@@ -95,11 +95,67 @@
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <label for="name">Nome</label>
-                                                        <input type="text" name="name" id="name">
+                                                        <input type="text" name="name" id="name" class="form-control" required>
                                                     </div>
                                                     <div class="col-6">
                                                         <label for="surname">Cognome</label>
-                                                        <input type="text" name="surname" id="surname">
+                                                        <input type="text" name="surname" id="surname" class="form-control" required>
+                                                    </div>
+                                                    <div class="col-6 mt-2">
+                                                        <label for="email">Email</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="email" class="form-control" name="email" id="email" required>
+                                                        </div>                                                          
+                                                    </div>
+                                                    <div class="col-6 mt-2">
+                                                        <label for="password">Password</label>
+                                                        <input type="password" name="password" id="password" class="form-control" required>
+                                                    </div>
+                                                    <div class="col-6 mt-2">
+                                                        <label for="indirizzo email">Indirizzo Email</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="email" class="form-control" name="indirizzo email" id="indirizzo email" required>
+                                                        </div>                                                          
+                                                    </div>
+                                                    <div class="col-6 mt-2">
+                                                        <label for="password">Password</label>
+                                                        <input type="password" name="password" id="password" class="form-control" required>
+                                                    </div>
+                                                    <div class="col-12 mt-2">
+                                                        <label for="indirizzo">Indirizzo</label>
+                                                        <input type="text" id="indirizzo" name="indirizzo" class="form-control" required>
+                                                    </div>
+                                                    <div class="col-6 mt-2">
+                                                        <label for="città">Città</label>
+                                                        <input type="text" id="città" name="città" class="form-control">
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <label for="stato">Stato</label>
+                                                        <select name="stato" id="stato" required class="mt-2">
+                                                            <option value="scegli">Scegli...</option>
+                                                            <option value="italia">Italia</option>
+                                                            <option value="francia">Francia</option>
+                                                            <option value="spagna">Spagna</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <label for="cap">Cap</label>
+                                                        <input type="text" name="cap" id="cap" class="form-control" required>
+                                                    </div>
+                                                    <div class="col-12 mt-2">
+                                                        <label for="foto">Foto</label>
+                                                        <div class="input-group mb-3">
+                                                            <input type="file" class="form-control" id="inputGroupFile01">
+                                                        </div>                                                          
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="checkbox" name="" id="" required><span class="ms-2">Seleziona per proseguire</span>
+                                                    </div>
+                                                    <div class="col-12 mt-3">
+                                                        <button type="button" class="btn btn-primary">Salva</button>
+                                                        <button type="button" class="btn btn-warning">Svuota</button>
                                                     </div>
                                                 </div>
                                             </div>
